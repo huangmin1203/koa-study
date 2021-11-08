@@ -1,6 +1,6 @@
 # Koa
 
-npm，包管理器，类似于python中的pip。官方网站：https://www.npmjs.com/。在这里可以搜到前端常用的工具库或者框架等。
+npm，包管理器，类似于 python 中的pip。官方网站：https://www.npmjs.com/。在这里可以搜到前端常用的工具库或者框架等。
 
 
 ### 初始化npm目录：
