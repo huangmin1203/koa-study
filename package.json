@@ -10,6 +10,7 @@
   "author": "huangmin",
   "license": "ISC",
   "dependencies": {
-    "koa": "^2.13.4"
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0"
   }
 }
