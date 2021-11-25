@@ -1,4 +1,4 @@
-# Koa
+# Koa，node.js框架
 
 npm，包管理器，类似于 python 中的pip。官方网站：https://www.npmjs.com/。在这里可以搜到前端常用的工具库或者框架等。
 
@@ -31,7 +31,6 @@ npm init -y
 ```
 npm i koa
 ```
-
 表示在当前目录下将koa安装为一个依赖。
 
 
@@ -98,3 +97,4 @@ querystring.includes('appIIII')   // false
 
 
 
+4、ctx 上下文，是koa提供的API

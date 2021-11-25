@@ -1,8 +1,10 @@
+// 1、初始化，创建一个koa实例
 const { HttpError } = require('koa');
 const Koa = require('koa');
 // koa-bodyparser为了解析body里面的数据
 var bodyParser = require('koa-bodyparser');
 const app_test = new Koa();
+// 为了使用bodyParser，解析数据
 app_test.use(bodyParser());
 const class_list_data = require('./../class_data')
 
@@ -13,14 +15,17 @@ const database = {
     classList: class_list_data
 }
 
-
+// 2、处理跨域
 // app_test.use(async ctx ,ctx=context背景，上下文
 app_test.use(async ctx => {
-    // 处理跨域名
+    // 处理跨域
     // ctx.response(header)处理相应头，让所有域名可访问
     ctx.set('Access-Control-Allow-Origin', '*');
     let postParam = ctx.request.body
-    console.log('postParam',postParam)
+    console.log('postParam',(postParam))
+ 
+// 写接口
+//判断请求路径
 
 // /user/login登录接口
     const path = ctx.request.path
